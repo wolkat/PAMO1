@@ -22,16 +22,27 @@
 
         <!--TitlePanel contains the name of the application and page title-->
         <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
-            <TextBlock x:Name="ApplicationTitle" Style="{StaticResource PhoneTextNormalStyle}">
-            	<Run Text="Test"/>
-            	<LineBreak/>
-            	<Run/>
-            </TextBlock>
-            <TextBlock x:Name="PageTitle" Text="Hello mate!" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+            <TextBlock x:Name="PageTitle" Text="Hello mate!" Margin="9,-7,10,0" Style="{StaticResource PhoneTextTitle1Style}"/>
         </StackPanel>
 
         <!--ContentPanel - place additional content here-->
-        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0"></Grid>
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="14,0,10,0">
+            <Button Content="Start" HorizontalAlignment="Left" Margin="94,10,0,0" VerticalAlignment="Top" Width="290" Click="Button_Click_2"/>
+            <Button Content="About" HorizontalAlignment="Left" Margin="94,82,0,0" VerticalAlignment="Top" Width="290" Click="Button_Click_1"/>
+            <TextBlock x:Name="tekstWiersza" HorizontalAlignment="Left" Margin="94,303,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="72" Width="286">
+            	<Run Text="Wierszyk"/>
+            	<LineBreak/>
+            	<Run/>
+            </TextBlock>
+            <Button Content="Help" HorizontalAlignment="Left" Margin="94,154,0,0" VerticalAlignment="Top" Width="290" Click="Button_Click_3"/>
+            <Button Content="Exit" HorizontalAlignment="Left" Margin="94,226,0,0" VerticalAlignment="Top" Width="290"/>
+            <TextBlock HorizontalAlignment="Left" Margin="30,559,0,0" TextWrapping="Wrap" Text="@wolszka" VerticalAlignment="Top"/>
+            <TextBox x:Name="sub1" HorizontalAlignment="Left" Height="72" Margin="30,375,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="127"/>
+            <TextBox x:Name="sub2" HorizontalAlignment="Left" Height="72" Margin="253,375,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="127"/>
+            <TextBlock HorizontalAlignment="Left" Margin="195,397,0,0" TextWrapping="Wrap" Text="+" VerticalAlignment="Top"/>
+            <Button x:Name="equals" Content="equals" HorizontalAlignment="Left" Margin="53,447,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.129,0.545" Click="equals_Click"/>
+            <TextBlock x:Name="sum" HorizontalAlignment="Left" Margin="253,471,0,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        </Grid>
     </Grid>
  
 </phone:PhoneApplicationPage>
